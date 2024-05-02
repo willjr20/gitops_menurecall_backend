@@ -1,8 +1,11 @@
 name: GitHub Actions (Actions Runner Controller - ARC) Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions using ARC 🚀
 on:
-  workflow_dispatch:
-
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
 jobs:
   Explore-GitHub-Actions:
     # You need to use the INSTALLATION_NAME from the previous step
